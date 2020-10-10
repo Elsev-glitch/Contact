@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_pading">16dp</dimen>
+    <dimen name="app_large_padin">24dp</dimen>
+    <dimen name="app_large_text">20sp</dimen>
+    <dimen name="app_text">16sp</dimen>
+    <dimen name="app_margin">16dp</dimen>
+    <dimen name="card_elevation">8dp</dimen>
+    <dimen name="card_corner_radius">8dp</dimen>
+    <dimen name="app_small_margin">10dp</dimen>
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Contact</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="setting">Настройки</string>
+    <string name="hint_name">Имя группы</string>
+    <string name="hint_description">Описание</string>
+    <string name="dialog_title">Создание новой группы</string>
+    <string name="dialog_positiv_button">Создать</string>
+    <string name="dialog_negative">Отмена</string>
+    <string name="hint__input_name">имя</string>
+    <string name="hint_input_phone">телефон</string>
+    <string name="hint_input_email">email</string>
+    <string name="hint_input_coment">описание</string>
+    <string name="btn_add">добавить</string>
+    <string name="input_name_toast">Имя не может быть пустым</string>
+</resources>
