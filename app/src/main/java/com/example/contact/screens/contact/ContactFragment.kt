@@ -30,8 +30,6 @@ class ContactFragment : Fragment() {
         return mBinding.root
     }
 
-
-
     override fun onStart() {
         super.onStart()
         init()
