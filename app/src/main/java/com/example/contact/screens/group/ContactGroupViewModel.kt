@@ -20,6 +20,11 @@ class ContactGroupViewModel(application: Application):AndroidViewModel(applicati
 //        get() = Dispatchers.Main+job
 //    private var job:Job = Job()
 
+    init {
+        initDatabase()
+        requestGroupWithContact()
+    }
+
     fun initDatabase() {
         val groupDao = AppRoomDatabase.getDatabase(mContext).getGroupDao()
         val contactDao = AppRoomDatabase.getDatabase(mContext).getContactDao()

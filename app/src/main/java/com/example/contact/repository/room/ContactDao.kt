@@ -11,6 +11,9 @@ interface ContactDao {
     @Query("SELECT COUNT(id) from contacts WHERE group_id=:groupId")
     fun getCount(groupId:Int):Int
 
+    @Query("DELETE FROM contacts WHERE group_id=:groupId")
+    fun deleteContactsByGroup(groupId:Int):Int
+
     @Insert
     fun insert(contact:Contact)
 

@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_contactFragment_to_addContactFragment"
             app:destination="@id/addContactFragment" />
+        <action
+            android:id="@+id/action_contactFragment_to_changeContactFragment"
+            app:destination="@id/changeContactFragment" />
     </fragment>
     <fragment
         android:id="@+id/addContactFragment"
@@ -30,6 +33,19 @@
         tools:layout="@layout/fragment_add_contact" >
         <action
             android:id="@+id/action_addContactFragment_to_contactFragment"
-            app:destination="@id/contactFragment" />
+            app:destination="@id/contactFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/contactGroupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changeContactFragment"
+        android:name="com.example.contact.screens.changeContact.ChangeContactFragment"
+        android:label="fragment_change_contact"
+        tools:layout="@layout/fragment_change_contact" >
+        <action
+            android:id="@+id/action_changeContactFragment_to_contactFragment"
+            app:destination="@id/contactFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/contactGroupFragment" />
     </fragment>
 </navigation>

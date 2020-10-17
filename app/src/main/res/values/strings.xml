@@ -14,4 +14,7 @@
     <string name="hint_input_coment">описание</string>
     <string name="btn_add">добавить</string>
     <string name="input_name_toast">Имя не может быть пустым</string>
+    <string name="btn_update">обновить</string>
+    <string name="menu_change">изменить</string>
+    <string name="menu_delete">удалить</string>
 </resources>

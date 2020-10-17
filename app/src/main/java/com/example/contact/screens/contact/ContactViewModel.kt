@@ -10,7 +10,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-class ContactViewModel(application: Application):AndroidViewModel(application) {
+class ContactViewModel(application: Application):AndroidViewModel(application){
 
     var allContacts:MutableLiveData<List<Contact>> = MutableLiveData()
 

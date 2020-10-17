@@ -5,3 +5,4 @@ import com.example.contact.repository.Repository
 
 lateinit var APP_ACTIVITY: MainActivity
 lateinit var REPOSITORY:Repository
+const val REQUEST_PHOTO = 10

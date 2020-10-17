@@ -9,10 +9,11 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.contact.R
+import com.example.contact.model.Group
 import com.example.contact.repository.room.GroupWithContact
 import kotlinx.android.synthetic.main.item_contact_group.view.*
 
-class ContactGroupAdapter(private val mViewModel:ContactGroupViewModel):RecyclerView.Adapter<ContactGroupAdapter.ContactGroupHolder>() {
+class ContactGroupAdapter(private val onDeleteClick:(Group)-> Unit ):RecyclerView.Adapter<ContactGroupAdapter.ContactGroupHolder>() {
 
     private var listItems= emptyList<GroupWithContact>()
 
@@ -49,9 +50,7 @@ class ContactGroupAdapter(private val mViewModel:ContactGroupViewModel):Recycler
         }
 
         holder.delete.setOnClickListener {
-            mViewModel.deleteGroupWithContact(listItems[holder.adapterPosition].group!!){
-                mViewModel.requestGroupWithContact()
-            }
+            onDeleteClick(listItems[holder.adapterPosition].group!!)
         }
     }
 

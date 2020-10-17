@@ -25,6 +25,7 @@ class RoomRepository(private val groupDao: GroupDao, private val contactDao:Cont
 
     override suspend fun deleteGroup(group: Group, onSuccess: () -> Unit) {
         groupDao.delete(group)
+        contactDao.deleteContactsByGroup(group.id)
         onSuccess()
     }
 
@@ -44,9 +45,11 @@ class RoomRepository(private val groupDao: GroupDao, private val contactDao:Cont
 
     override suspend fun updateContact(contact: Contact, onSuccess: () -> Unit) {
         contactDao.update(contact)
+        onSuccess()
     }
 
     override suspend fun deleteContact(contact: Contact, onSuccess: () -> Unit) {
         contactDao.delete(contact)
+        onSuccess()
     }
 }
